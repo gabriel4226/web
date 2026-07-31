@@ -54,17 +54,24 @@ h1,h2,h3,.brand,.btn,.nav a,.t-item strong{font-family:'Montserrat',sans-serif}
 
 /* Hero */
 .hero{
+  position:relative;
   padding:5.5rem 0 4.5rem;
   background:
-    radial-gradient(600px 300px at 85% -10%, rgba(15,143,143,0.08), transparent 60%),
-    radial-gradient(500px 260px at 5% 110%, rgba(194,59,59,0.06), transparent 60%);
+    linear-gradient(180deg, rgba(11,32,54,0.5), rgba(11,32,54,0.6)),
+    url('pexels-stergerz-11227879.jpg');
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  color:#fff;
 }
 .hero-inner{max-width:760px}
+.hero .eyebrow{color:var(--coral)}
+.hero .eyebrow::before{background:var(--coral)}
 .hero-inner h1{
   font-weight:700;font-size:2.5rem;line-height:1.15;letter-spacing:-.01em;
-  margin:0 0 1.1rem;color:var(--navy);
+  margin:0 0 1.1rem;color:#fff;
 }
-.lead{font-size:1.15rem;color:var(--ink);opacity:.85;margin:0 0 2rem;max-width:56ch}
+.hero .lead{font-size:1.15rem;color:rgba(255,255,255,0.9);opacity:1;margin:0 0 2rem;max-width:56ch}
 
 /* Name-shift callout */
 .name-shift{
