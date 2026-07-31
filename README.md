@@ -22,3 +22,4 @@ Si quieres, puedo:
 
 - Añadir archivos de metadatos (Open Graph) y una imagen de enlace generada.
 - Incluir un formulario de recopilación de comentarios (requiere backend o servicio externo como Google Forms).
+# web
