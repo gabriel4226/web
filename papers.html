@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Papers — Desarrollo Justo 🇩🇴</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Desarrollo Justo 🇩🇴</a>
+      <nav class="nav" id="nav">
+        <a href="index.html#mision">Nuestra misión</a>
+        <a href="index.html#veron">Verón-Punta Cana</a>
+        <a href="index.html#posicion">Nuestra posición</a>
+        <a href="papers.html" class="active">Papers</a>
+        <a href="index.html#cta">Actúa</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero papers-hero">
+      <div class="container hero-inner">
+        <span class="eyebrow">Investigación</span>
+        <h1>Papers y análisis técnicos</h1>
+        <p class="lead">Estudios y ensayos que fundamentan nuestra posición sobre ordenamiento territorial, seguridad jurídica e inversión en República Dominicana.</p>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="container">
+        <div class="papers-list">
+          <article class="paper-card">
+            <span class="paper-card-eyebrow">Análisis técnico · Agosto 2026</span>
+            <h2><a href="papers/seguridad-juridica-riesgo-pais-ptom.html">Seguridad Jurídica, Riesgo País y Planificación Territorial: Un Análisis Técnico sobre el PTOM de Punta Cana</a></h2>
+            <p>La discrecionalidad administrativa en el PTOM de Verón-Punta Cana actúa como un choque exógeno a la estabilidad patrimonial, elevando la prima de riesgo regulatoria y encareciendo el costo del capital para toda la economía nacional.</p>
+            <a class="paper-card-link" href="papers/seguridad-juridica-riesgo-pais-ptom.html">Leer el paper completo →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Desarrollo Justo 🇩🇴 — Coalición por criterios justos en el PMOT Verón-Punta Cana</strong>
+        <p class="muted">Contacto: <a href="mailto:contacto@pmot-veron.org">contacto@pmot-veron.org</a></p>
+      </div>
+      <div class="social">
+        <a href="https://twitter.com/" target="_blank" rel="noopener">Twitter</a>
+        <a href="https://facebook.com/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      const nav = document.getElementById('nav');
+      const btn = document.getElementById('navToggle');
+      btn.addEventListener('click', ()=> nav.classList.toggle('open'));
+    })();
+  </script>
+</body>
+</html>
