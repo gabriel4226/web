@@ -1,16 +1,19 @@
 :root{
-  /* Dominican-inspired palette: deep flag-blue & red, warmed with Caribbean teal/coral */
-  --navy:#13294b;
-  --navy-light:#1f3d68;
-  --red:#c23b3b;
-  --red-dark:#a12f2f;
+  /* Palette updated to match provided SVG: navy, gold, Dominican red, flag-blue */
+  --navy:#031D38;
+  --navy-light:#05264B;
+  --flag-blue:#05264B;
+  --gold:#DFB76C;
+  --gold-dark:#C59B4E;
+  --red:#CE1126;
+  --red-dark:#A51E1E;
   --teal:#0f8f8f;
-  --coral:#e8895f;
-  --sand:#faf8f4;
+  --coral:#DFB76C; /* reuse gold for small accents */
+  --sand:#F6F2EA;
   --paper:#ffffff;
-  --ink:#13294b;
-  --muted:#6b7280;
-  --line:rgba(19,41,75,0.08);
+  --ink:#13294b; /* used for text on light panels */
+  --muted:#9aa4ae;
+  --line:rgba(255,255,255,0.06);
   --max-width:1120px;
   --radius:14px;
 }
@@ -20,11 +23,14 @@ html,body{height:100%}
 body{
   margin:0;
   font-family:'Merriweather', Georgia, serif;
-  color:var(--ink);
-  background:var(--sand);
+  color:#ffffff;
+  background:var(--navy);
   -webkit-font-smoothing:antialiased;
   line-height:1.65;
 }
+
+/* Panels and light backgrounds should use the dark ink color for readability */
+.panel.alt, .paper-card, .paper-body{color:var(--ink)}
 h1,h2,h3,.brand,.btn,.nav a,.t-item strong{font-family:'Montserrat',sans-serif}
 .container{max-width:var(--max-width);margin:0 auto;padding:0 1.5rem}
 
@@ -128,9 +134,27 @@ h1,h2,h3,.brand,.btn,.nav a,.t-item strong{font-family:'Montserrat',sans-serif}
 .btn:not(.primary):not(.ghost){background:var(--navy);color:#fff}
 .btn:not(.primary):not(.ghost):hover{background:var(--navy-light);transform:translateY(-1px)}
 
-/* Panels */
-.panel{padding:4.5rem 0}
+.panel{padding:4.5rem 0; background:transparent; color:#ffffff; border-top:1px solid rgba(255,255,255,0.04); border-bottom:1px solid rgba(255,255,255,0.04)}
 .panel.alt{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+
+/* Ensure headings, paragraphs and list items inside transparent panels are white for readability */
+.panel:not(.alt) h2,
+.panel:not(.alt) h1,
+.panel:not(.alt) p,
+.panel:not(.alt) .eyebrow,
+.panel:not(.alt) .demand-list li,
+.panel:not(.alt) .actions li,
+.panel:not(.alt) .injustice-link,
+.panel:not(.alt) .paper-card-eyebrow{
+  color: #ffffff !important;
+}
+
+/* Adjust eyebrow underline color on transparent panels */
+.panel:not(.alt) .eyebrow::before{background:var(--gold)}
+
+/* Links in transparent panels should be visible */
+.panel:not(.alt) a{color:var(--gold)}
+.panel:not(.alt) a:hover{color:var(--red)}
 .panel.small{padding:3rem 0}
 h2{font-weight:700;font-size:1.6rem;letter-spacing:-.01em;color:var(--navy);margin:0 0 .9rem;max-width:38ch}
 .panel > .container > p{max-width:64ch}
