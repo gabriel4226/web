@@ -1,182 +1,272 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Desarrollo Justo 🇩🇴 — Análisis económico, certidumbre jurídica y derecho de propiedad</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Desarrollo Justo RD promueve reglas claras, certidumbre jurídica y políticas públicas basadas en evidencia.">
+  <title>Desarrollo Justo RD — Instituciones, inversión y territorio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Cinzel:wght@700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="topline">
+    <div class="container topline-inner">
+      <span>República Dominicana · Presente y futuro</span>
+      <span>Análisis ciudadano independiente</span>
+    </div>
+  </div>
+
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#">Desarrollo Justo 🇩🇴</a>
-      <nav class="nav" id="nav">
-        <a href="#mision">Nuestra misión</a>
-        <a href="#veron">Verón-Punta Cana</a>
-        <a href="#posicion">Nuestra posición</a>
-        <a href="#cta">Actúa</a>
+      <a class="brand" href="#inicio" aria-label="Desarrollo Justo RD — Inicio">
+        <img src="assets/desarrollo-justo-logo-circular.png" alt="">
+        <span class="brand-copy">
+          <strong>Desarrollo Justo</strong>
+          <small>Por el futuro de la República Dominicana</small>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navegación principal">
+        <a href="#mision">Misión</a>
+        <a href="#agenda">Agenda RD</a>
+        <a href="#enfoque">Enfoque</a>
+        <a href="#veron">Caso de estudio</a>
+        <a href="#posicion">Posición</a>
       </nav>
-      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+
+      <a class="header-action" href="#cta">Participa <span aria-hidden="true">↗</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">Menú</button>
     </div>
   </header>
 
-  <main>
+  <main id="inicio">
     <section class="hero">
-      <!-- SVG hero provided by user: Dominican navy/gold/red design -->
-      <div class="container hero-inner svg-hero">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="100%" height="100%">
-  <defs>
-    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#DFB76C"/>
-      <stop offset="100%" stop-color="#C59B4E"/>
-    </linearGradient>
-
-    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#000000" flood-opacity="0.6"/>
-    </filter>
-  </defs>
-
-  <rect width="1080" height="1350" fill="#031D38"/>
-
-  <rect x="40" y="40" width="1000" height="1270" rx="16" fill="none" stroke="#CE1126" stroke-width="4"/>
-  <rect x="52" y="52" width="976" height="1246" rx="10" fill="none" stroke="#FFFFFF" stroke-width="2"/>
-
-  <g transform="translate(540, 130)" text-anchor="middle">
-    <g transform="translate(0, -10)" filter="url(#shadow)">
-      <rect x="-45" y="-35" width="90" height="60" rx="6" fill="#05264B" stroke="#DFB76C" stroke-width="2"/>
-      <rect x="-35" y="-25" width="30" height="18" fill="#002D62"/>
-      <rect x="-5" y="-25" width="30" height="18" fill="#CE1126"/>
-      <rect x="-35" y="-7" width="30" height="18" fill="#CE1126"/>
-      <rect x="-5" y="-7" width="30" height="18" fill="#002D62"/>
-      <rect x="-8" y="-25" width="6" height="36" fill="#FFFFFF"/>
-      <rect x="-35" y="-11" width="60" height="6" fill="#FFFFFF"/>
-    </g>
-
-    <text x="0" y="55" fill="#DFB76C" font-family="'Montserrat', Arial, sans-serif" font-weight="800" font-size="20" letter-spacing="6">GRUPO DE ESTUDIO Y ANÁLISIS</text>
-    <text x="0" y="100" fill="#FFFFFF" font-family="'Cinzel', 'Georgia', serif" font-weight="900" font-size="44" letter-spacing="3">DESARROLLO JUSTO RD</text>
-  </g>
-
-  <path d="M 180 270 L 900 270" stroke="#DFB76C" stroke-width="2"/>
-  <circle cx="540" cy="270" r="5" fill="#CE1126"/>
-
-  <g transform="translate(540, 360)" text-anchor="middle">
-    <text x="0" y="-10" fill="#DFB76C" font-family="'Georgia', serif" font-size="70" opacity="0.4">“</text>
-    <text x="0" y="20" fill="#FFFFFF" font-family="'Playfair Display', 'Georgia', serif" font-style="italic" font-weight="700" font-size="34">
-      <tspan x="0" dy="0">"Sin certidumbre jurídica ni respeto a la</tspan>
-      <tspan x="0" dy="48">propiedad privada, no hay desarrollo sostenible."</tspan>
-    </text>
-    <text x="0" y="130" fill="#CE1126" font-family="'Montserrat', Arial, sans-serif" font-weight="800" font-size="18" letter-spacing="4">POR UNA REPÚBLICA DOMINICANA JUSTA</text>
-  </g>
-
-  <path d="M 280 530 L 800 530" stroke="#DFB76C" stroke-width="1" opacity="0.4"/>
-
-  <g transform="translate(100, 570)" filter="url(#shadow)">
-    <rect width="880" height="150" rx="12" fill="#05264B" stroke="#DFB76C" stroke-width="1.5"/>
-    <rect x="0" y="0" width="10" height="150" rx="5" fill="#DFB76C"/>
-    <circle cx="70" cy="75" r="30" fill="#031D38" stroke="#DFB76C" stroke-width="2"/>
-    <text x="70" y="85" fill="#DFB76C" font-family="Arial" font-size="28" text-anchor="middle">📊</text>
-    <text x="130" y="60" fill="#FFFFFF" font-family="'Montserrat', Arial, sans-serif" font-weight="800" font-size="22" letter-spacing="1">ANÁLISIS ECONÓMICO</text>
-    <text x="130" y="96" fill="#DFB76C" font-family="'Open Sans', Arial, sans-serif" font-weight="400" font-size="19">Investigación rigurosa sobre políticas públicas y mercado libre.</text>
-  </g>
-
-  <g transform="translate(100, 750)" filter="url(#shadow)">
-    <rect width="880" height="150" rx="12" fill="#05264B" stroke="#DFB76C" stroke-width="1.5"/>
-    <rect x="0" y="0" width="10" height="150" rx="5" fill="#DFB76C"/>
-    <circle cx="70" cy="75" r="30" fill="#031D38" stroke="#DFB76C" stroke-width="2"/>
-    <text x="70" y="85" fill="#DFB76C" font-family="Arial" font-size="28" text-anchor="middle">⚖️</text>
-    <text x="130" y="60" fill="#FFFFFF" font-family="'Montserrat', Arial, sans-serif" font-weight="800" font-size="22" letter-spacing="1">CERTIDUMBRE JURÍDICA</text>
-    <text x="130" y="96" fill="#DFB76C" font-family="'Open Sans', Arial, sans-serif" font-weight="400" font-size="19">Estudio del marco legal, institucionalidad y Estado de derecho.</text>
-  </g>
-
-  <g transform="translate(100, 930)" filter="url(#shadow)">
-    <rect width="880" height="150" rx="12" fill="#05264B" stroke="#CE1126" stroke-width="1.5"/>
-    <rect x="0" y="0" width="10" height="150" rx="5" fill="#CE1126"/>
-    <circle cx="70" cy="75" r="30" fill="#031D38" stroke="#CE1126" stroke-width="2"/>
-    <text x="70" y="85" fill="#CE1126" font-family="Arial" font-size="28" text-anchor="middle">🏠</text>
-    <text x="130" y="60" fill="#FFFFFF" font-family="'Montserrat', Arial, sans-serif" font-weight="800" font-size="22" letter-spacing="1">DERECHO DE PROPIEDAD</text>
-    <text x="130" y="96" fill="#DFB76C" font-family="'Open Sans', Arial, sans-serif" font-weight="400" font-size="19">Defensa del ciudadano e inversor frente a arbitrios regulatorios.</text>
-  </g>
-
-  <a href="https://www.instagram.com/desarrollojustord/" target="_blank" rel="noopener">
-    <g transform="translate(540, 1170)" text-anchor="middle">
-      <rect x="-250" y="-35" width="500" height="70" rx="35" fill="#CE1126" stroke="#DFB76C" stroke-width="2" filter="url(#shadow)"/>
-      <text x="0" y="8" fill="#FFFFFF" font-family="'Montserrat', Arial, sans-serif" font-weight="900" font-size="20" letter-spacing="2">ÚNETE A @DESARROLLOJUSTORD</text>
-    </g>
-  </a>
-</svg>
-      </div>
-    </section>
-
-    <section id="mision" class="panel">
-      <div class="container">
-        <span class="eyebrow">Nuestra misión</span>
-        <h2>Por qué existimos</h2>
-        <p>Creemos que el desarrollo justo de República Dominicana solo es sostenible si se construye sobre reglas de juego estables, predecibles y aplicadas con equidad. Nuestro trabajo combina <strong>análisis económico riguroso</strong>, <strong>estudio de la certidumbre jurídica</strong> y <strong>defensa del derecho de propiedad</strong> para informar el debate público y proponer políticas públicas que sean justas para ciudadanos, comunidades e inversionistas por igual.</p>
-        <p>Publicamos investigación técnica, papers y análisis de casos concretos en distintas áreas del desarrollo económico y territorial —comenzando por los procesos de planificación en curso en Verón-Punta Cana— con el objetivo de fortalecer la calidad institucional y la confianza en el marco regulatorio dominicano.</p>
-      </div>
-    </section>
-
-    <section id="veron" class="panel alt">
-      <div class="container">
-        <span class="eyebrow">Caso de estudio</span>
-        <h2>Urbanización justa y equitativa en Verón-Punta Cana</h2>
-        <p>Verón-Punta Cana es uno de los motores turísticos y económicos más importantes de República Dominicana, y actualmente atraviesa un proceso activo de ordenamiento territorial. Es uno de los casos donde aplicamos nuestro enfoque: entender el impacto económico de las decisiones regulatorias, evaluar la certidumbre jurídica que ofrecen a propietarios e inversionistas, y velar por que el derecho de propiedad sea respetado en cualquier proceso de planificación.</p>
-        <p>No nos oponemos a la planificación territorial —la consideramos necesaria y legítima. Lo que proponemos es que se lleve a cabo con <strong>criterios técnicos</strong>, <strong>reglas predecibles</strong> y <strong>compensación justa</strong> cuando se limite el aprovechamiento de la propiedad privada.</p>
-          <!-- removed legacy papers link -->
-        </div>
-    </section>
-
-    <section id="posicion" class="panel">
-      <div class="container">
-        <span class="eyebrow">Lo que proponemos</span>
-        <h2>Nuestra posición</h2>
-        <p>Promovemos un desarrollo justo, ordenado y sostenible. No pedimos la eliminación de normas: pedimos que cualquier política pública —de ordenamiento territorial, fiscal o regulatoria— sea <strong>proporcional</strong>, <strong>técnicamente justificada</strong> y <strong>aplicada con consistencia</strong>, dentro de un marco de reglas estables y predecibles.</p>
-
-        <ul class="demand-list">
-          <li>Promovemos reglas claras, técnicas y aplicadas de forma consistente en toda política de desarrollo.</li>
-          <li>Pedimos mecanismos de compensación económica justos cuando el interés público limite el derecho de propiedad.</li>
-          <li>Impulsamos la certidumbre jurídica como condición para atraer inversión de largo plazo y reducir el riesgo país.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="cta" class="panel">
-      <div class="container cta-inner">
-        <span class="eyebrow">Súmate</span>
-        <h2>¿Cómo puedes ayudar?</h2>
-        <ul class="actions">
-          <li>Lee nuestros papers y análisis técnicos para entender el debate a fondo.</li>
-          <li>Síguenos en redes para actualizaciones y nuevas publicaciones.</li>
-          <li>Comparte este sitio para que la discusión sea amplia y participativa.</li>
-        </ul>
-
-          <div class="cta-buttons">
-            <a class="btn primary" href="https://www.instagram.com/desarrollojustord/" target="_blank" rel="noopener">Seguir en Instagram</a>
+      <div class="hero-rule" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="kicker">Una agenda institucional para nuestro país</p>
+          <h1>Una República Dominicana que crece con reglas justas.</h1>
+          <p class="hero-lead">Queremos que el progreso dominicano se apoye en instituciones confiables, inversión responsable y derechos respetados—desde cada municipio hasta la agenda nacional.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#mision">Conoce nuestra misión</a>
+            <a class="text-link" href="#veron">Ver caso de estudio <span aria-hidden="true">→</span></a>
           </div>
+        </div>
+
+        <div class="hero-seal">
+          <span class="seal-orbit orbit-one" aria-hidden="true"></span>
+          <span class="seal-orbit orbit-two" aria-hidden="true"></span>
+          <img src="assets/desarrollo-justo-logo-circular.png" alt="Emblema de Desarrollo Justo RD: la República Dominicana y la figura de la Justicia con su balanza">
+          <div class="seal-caption">
+            <span>Nuestro compromiso</span>
+            <strong>Con la República Dominicana</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="container hero-footnote" aria-label="Principios de trabajo">
+        <span>01 — País</span>
+        <span>02 — Institucionalidad</span>
+        <span>03 — Futuro</span>
+      </div>
+    </section>
+
+    <section id="enfoque" class="pillars">
+      <div class="container">
+        <div class="section-heading compact">
+          <p class="eyebrow">Nuestro enfoque</p>
+          <h2>Tres lentes, una misma pregunta: ¿es una política verdaderamente justa?</h2>
+        </div>
+
+        <div class="pillar-grid">
+          <article class="pillar-card">
+            <span class="card-number">01</span>
+            <div class="card-icon" aria-hidden="true">↗</div>
+            <h3>Análisis económico</h3>
+            <p>Medimos incentivos, costos y consecuencias para que el debate público parta de evidencia.</p>
+          </article>
+          <article class="pillar-card">
+            <span class="card-number">02</span>
+            <div class="card-icon" aria-hidden="true">§</div>
+            <h3>Certidumbre jurídica</h3>
+            <p>Evaluamos si las reglas son estables, predecibles y aplicadas de forma consistente.</p>
+          </article>
+          <article class="pillar-card accent-card">
+            <span class="card-number">03</span>
+            <div class="card-icon" aria-hidden="true">◇</div>
+            <h3>Derecho de propiedad</h3>
+            <p>Defendemos procesos proporcionales y compensación justa ante límites al uso de la propiedad.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="mision" class="mission">
+      <div class="container editorial-grid">
+        <div class="section-index">
+          <span>01</span>
+          <p>Nuestra misión</p>
+        </div>
+        <div class="mission-main">
+          <p class="eyebrow">Por qué existimos</p>
+          <h2>El próximo capítulo dominicano necesita confianza.</h2>
+          <p class="intro">República Dominicana tiene la energía, el talento y la ambición para seguir avanzando. Nuestro reto es asegurar que ese progreso llegue acompañado de reglas estables, instituciones creíbles y oportunidades duraderas.</p>
+          <div class="mission-columns">
+            <p>Nuestro trabajo combina análisis económico riguroso, estudio de la certidumbre jurídica y defensa del derecho de propiedad para elevar la conversación pública dominicana.</p>
+            <p>Estudiamos decisiones que afectan a comunidades, propietarios e inversionistas, y proponemos mejores reglas para el desarrollo nacional y municipal.</p>
+          </div>
+        </div>
+        <blockquote>“Apostar por República Dominicana también significa exigir instituciones a la altura de su potencial.”</blockquote>
+      </div>
+    </section>
+
+    <section id="agenda" class="country-agenda">
+      <div class="container country-grid">
+        <div class="country-monogram" aria-hidden="true">
+          <span>RD</span>
+          <small>Quisqueya</small>
+        </div>
+        <div class="country-content">
+          <p class="eyebrow light">Una agenda país</p>
+          <h2>El crecimiento dominicano merece instituciones a su altura.</h2>
+          <p class="country-intro">Nuestro punto de partida es sencillo: el desarrollo no se mide únicamente por cuánto construimos, sino por la confianza que generamos, la seguridad que ofrecemos y las oportunidades que dejamos a la próxima generación.</p>
+
+          <div class="agenda-grid">
+            <article>
+              <span>01</span>
+              <h3>Territorio que funciona</h3>
+              <p>Municipios planificados con criterios técnicos, servicios adecuados y respeto por las realidades de cada comunidad.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Inversión con confianza</h3>
+              <p>Reglas previsibles para que el capital dominicano y extranjero pueda apostar por el país a largo plazo.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Estado de derecho</h3>
+              <p>Instituciones que actúen con transparencia, consistencia y el mismo estándar para todos.</p>
+            </article>
+            <article>
+              <span>04</span>
+              <h3>Ciudadanía con voz</h3>
+              <p>Decisiones públicas explicadas, consultadas y abiertas a la participación de quienes viven sus consecuencias.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="veron" class="case-study">
+      <div class="container">
+        <div class="case-header">
+          <div>
+            <p class="eyebrow light">Caso de estudio · Verón–Punta Cana</p>
+            <h2>Planificar el crecimiento sin sacrificar la confianza.</h2>
+          </div>
+          <span class="case-number">01 / 01</span>
+        </div>
+
+        <div class="case-grid">
+          <div class="case-copy">
+            <p class="case-lead">Verón–Punta Cana proyecta al mundo la capacidad turística y emprendedora de República Dominicana. Su ordenamiento territorial debe estar a la altura de esa responsabilidad nacional.</p>
+            <p>No nos oponemos a la planificación territorial: la consideramos necesaria y legítima. Proponemos que se construya sobre criterios técnicos, reglas predecibles y compensación justa cuando se limite el aprovechamiento de la propiedad privada.</p>
+            <a class="case-link" href="#posicion">Conocer nuestra posición <span aria-hidden="true">→</span></a>
+          </div>
+
+          <ol class="case-framework">
+            <li>
+              <span>01</span>
+              <div><strong>Medir el impacto</strong><p>Entender los efectos económicos de cada decisión regulatoria.</p></div>
+            </li>
+            <li>
+              <span>02</span>
+              <div><strong>Proteger la previsibilidad</strong><p>Evitar cambios arbitrarios que debiliten la confianza institucional.</p></div>
+            </li>
+            <li>
+              <span>03</span>
+              <div><strong>Equilibrar derechos</strong><p>Conciliar el interés público con un trato justo a propietarios e inversionistas.</p></div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="posicion" class="position">
+      <div class="container editorial-grid position-grid">
+        <div class="section-index">
+          <span>02</span>
+          <p>Nuestra posición</p>
+        </div>
+        <div class="position-main">
+          <p class="eyebrow">Principios para actuar</p>
+          <h2>Orden sí. Arbitrariedad no.</h2>
+          <p class="intro">Promovemos políticas proporcionales, técnicamente justificadas y aplicadas con consistencia.</p>
+
+          <div class="principle-list">
+            <article>
+              <span>01</span>
+              <div><h3>Reglas claras</h3><p>Criterios públicos, técnicos y consistentes para toda política de desarrollo.</p></div>
+            </article>
+            <article>
+              <span>02</span>
+              <div><h3>Compensación justa</h3><p>Mecanismos equitativos cuando el interés público limite derechos de propiedad.</p></div>
+            </article>
+            <article>
+              <span>03</span>
+              <div><h3>Visión de largo plazo</h3><p>Certidumbre jurídica para atraer inversión y reducir el riesgo del país.</p></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cta" class="cta">
+      <div class="container cta-grid">
+        <div>
+          <p class="eyebrow">Participa</p>
+          <h2>El país que queremos se construye con una conversación mejor informada.</h2>
+        </div>
+        <div class="cta-copy">
+          <p>Sigue nuestro trabajo, comparte los análisis y ayuda a construir una República Dominicana más justa, confiable y preparada para el futuro.</p>
+          <a class="btn primary" href="https://www.instagram.com/desarrollojustord/" target="_blank" rel="noopener">Seguir en Instagram <span aria-hidden="true">↗</span></a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>
-        <strong>Desarrollo Justo 🇩🇴 — Análisis económico, certidumbre jurídica y derecho de propiedad</strong>
-        <p class="muted">Contacto: <a href="mailto:contacto@pmot-veron.org">contacto@pmot-veron.org</a></p>
+    <div class="container footer-grid">
+      <a class="footer-brand" href="#inicio">
+        <img src="assets/desarrollo-justo-logo-circular.png" alt="">
+        <span><strong>Desarrollo Justo</strong><small>República Dominicana</small></span>
+      </a>
+      <p>Más confianza.<br>Mejor República Dominicana.</p>
+      <div class="footer-contact">
+        <span>Contacto</span>
+        <a href="mailto:contacto@pmot-veron.org">contacto@pmot-veron.org</a>
       </div>
-        <div class="social">
-          <!-- social links removed -->
-        </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 Desarrollo Justo RD</span>
+      <span>Análisis económico · Certidumbre jurídica · Derecho de propiedad</span>
     </div>
   </footer>
 
   <script>
-    (function(){
+    (() => {
       const nav = document.getElementById('nav');
-      const btn = document.getElementById('navToggle');
-      btn.addEventListener('click', ()=> nav.classList.toggle('open'));
+      const button = document.getElementById('navToggle');
+      button.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('open');
+        button.setAttribute('aria-expanded', String(isOpen));
+      });
+      nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+        nav.classList.remove('open');
+        button.setAttribute('aria-expanded', 'false');
+      }));
     })();
   </script>
 </body>
